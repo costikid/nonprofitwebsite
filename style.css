@@ -365,7 +365,7 @@ background-color: var(--green-3);
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(media/kibera-3.png);
+    background-image: url(media/kibera-3.jpg);
     background-position: center;
     background-size: cover;
 }
