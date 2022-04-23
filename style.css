@@ -508,6 +508,8 @@ padding: var(--most-used-em);
   background-color: var(--green-1);
   
 }
+
+
 .footer h4{
   margin-bottom: 25px;
   margin-top: 20px;
@@ -522,7 +524,24 @@ padding: var(--most-used-em);
   padding: 18px 0;
 }
 
+.fa:hover{
+  color: var(--green-2);
+}
+
 .footer h1{
   color: var(--light);
   font-size: var(--most-used-em);
+}
+
+.footer p{
+  color: var(--light);
+}
+
+.footer a{
+  text-decoration: none;
+  color: var(--light);
+}
+
+.footer a:hover{
+  color: var(--green-2);
 }
