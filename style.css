@@ -38,7 +38,7 @@ header
 }
 header .logo
 {
-  width: 70px;
+  width: 50px;
   background-color: var(--light);
 }
 .toggle
