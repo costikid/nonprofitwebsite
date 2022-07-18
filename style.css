@@ -23,7 +23,35 @@
 
 }
 
+#navbar {
+  overflow: hidden;
+  background-color: var(--green-1);
+}
 
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+  font-size: 0.9em;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 3;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
 header
 {
   position: absolute;
@@ -40,26 +68,9 @@ header .logo
 {
   width: 50px;
   background-color: var(--light);
+  margin-top: 1em;
 }
-.toggle
-{
-  position: relative;
-  width: 60px;
-  height: 60px;
-  background: url(https://i.ibb.co/HrfVRcx/menu.png);
-  background-repeat: no-repeat;
-  background-size: 30px;
-  background-position: center;
-  cursor: pointer;
-}
-.toggle.active
-{
-  background: url(https://i.ibb.co/rt3HybH/close.png);
-  background-repeat: no-repeat;
-  background-size: 25px;
-  background-position: center;
-  cursor: pointer;
-}
+
 .showcase
 {
   position: relative;
@@ -217,6 +228,13 @@ header .logo
 
 #subjects-section{
     background-color: var(--green-1);
+}
+
+.subjects p{
+  font-size: 1em;
+  color: var(--light);
+  text-align: center;
+  padding: 0.5em;
 }
 
 .section-title{
@@ -452,14 +470,14 @@ background-color: var(--green-3);
 
   }
   
-  .leonard-photo {
+  .team-photo {
     justify-self: center;
     align-self: center;
     grid-area: leonard-photo;
     padding: var(--most-used-em);
   }
   
-  .leonard-bio {
+  .team-bio {
     justify-self: center;
     align-self: center;
     grid-area: leonard-bio;
@@ -476,7 +494,7 @@ background-color: var(--green-3);
 
 }
 
-.leonard-bio{
+.team-bio{
     padding: var(--most-used-em);
 }
 
