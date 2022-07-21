@@ -230,6 +230,12 @@ header .logo
     background-color: var(--green-1);
 }
 
+@media (min-width: 991px) {
+  #subjects-section{
+    height: 60em;
+  }
+}
+
 .subjects p{
   font-size: 1em;
   color: var(--light);
@@ -282,6 +288,8 @@ background-color: var(--green-3);
     align-self: center;
     grid-area: subject-3;
   }
+
+
 
   @media (max-width: 768px){
     .subjects{
@@ -496,14 +504,47 @@ background-color: var(--green-3);
 
 .team-bio{
     padding: var(--most-used-em);
+    
 }
 
   }
 
+  #fundraising a
+  {
+    display: inline-block;
+    font-size: 0.5em;
+    background: var(--green-2);
+    padding: 10px 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 500;
+    margin-top: 10px;
+    color: var(--light);
+    letter-spacing: 2px;
+    transition: 0.2s;
+  }
+  #fundraising a:focus
+  {
+    background-color: var(--green-1);
+    color: var(--light);
+  }
+
+  #fundraising a:active{
+    background-color: var(--green-1);
+  }
+
+  .section-title-contact{
+    color: var(--light);
+    text-align: center;
+    font-size: 3em;
+    padding: var(--most-used-em);
+    background-color: var(--green-1);
+    }
+
   .contact-container {  display: flex;
 flex-direction: column;
 align-items: center;
-background-color: var(--green-3);
+background-color: var(--green-1);
 padding: var(--most-used-em);
 }
 
@@ -563,4 +604,3 @@ padding: var(--most-used-em);
 .footer a:hover{
   color: var(--green-2);
 }
-
