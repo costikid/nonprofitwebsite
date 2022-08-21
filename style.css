@@ -533,6 +533,8 @@ background-color: var(--green-3);
     background-color: var(--green-1);
   }
 
+
+
   .section-title-contact{
     color: var(--light);
     text-align: center;
@@ -556,6 +558,10 @@ padding: var(--most-used-em);
 .contact-img{
   width: 100px;
   padding: var(--most-used-em);
+}
+
+.newsletter{
+  padding: 1em;
 }
 
 
@@ -604,3 +610,4 @@ padding: var(--most-used-em);
 .footer a:hover{
   color: var(--green-2);
 }
+
