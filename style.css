@@ -620,6 +620,8 @@ padding: var(--most-used-em);
 @media (max-width: 768px){
   .formster{
       height: 45em;
+          width: max-content;
+
 
 }
 }
