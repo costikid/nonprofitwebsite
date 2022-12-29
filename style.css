@@ -615,15 +615,14 @@ padding: var(--most-used-em);
 }
 
 .formster{
+  display: none;
   height: 30em;
 }
+
 @media (max-width: 768px){
   .formster{
       height: 45em;
-          width: 6.3em;
-
-
+      width: max-content;
 
 }
 }
-
