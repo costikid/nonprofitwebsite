@@ -621,6 +621,8 @@ padding: var(--most-used-em);
   .formster{
       height: 45em;
           width: max-content;
+          margin-right: 1em;
+
 
 
 }
