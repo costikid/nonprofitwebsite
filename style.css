@@ -23,13 +23,13 @@
 
 }
 
+
 .logo-icon{
   width: 3.5em;
 }
 .navbar{
   background-color: var(--green-1);
-    opacity: 85%;
-
+  opacity: 85%;
 }
 .navbar a{
   color: var(--light);
