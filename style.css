@@ -29,7 +29,7 @@
 }
 .navbar{
   background-color: var(--green-1);
-  opacity: 85%;
+  opacity: 95%;
 }
 .navbar a{
   color: var(--light);
