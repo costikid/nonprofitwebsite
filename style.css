@@ -15,21 +15,13 @@
     --dark:#111;
     --most-used-em: 1em;
     --frequent-font-size: 1.5em;
-
-
-
-
-
-
 }
-
 
 .logo-icon{
   width: 3.5em;
 }
 .navbar{
   background-color: var(--green-1);
-  opacity: 95%;
 }
 .navbar a{
   color: var(--light);
@@ -43,8 +35,6 @@
 .navbar a:hover{
   color: var(--green-2);
 }
-
-
 
 li > a::after {
   content: "";
