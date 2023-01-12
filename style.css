@@ -28,6 +28,8 @@
 }
 .navbar{
   background-color: var(--green-1);
+    opacity: 85%;
+
 }
 .navbar a{
   color: var(--light);
