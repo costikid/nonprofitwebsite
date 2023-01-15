@@ -779,7 +779,7 @@ padding: var(--most-used-em);
   }
  @media (max-width: 768px){
     #podcast-episodes iframe{
-        width: 200px;
+        width: 300px;
   
   }
 
