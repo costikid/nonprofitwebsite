@@ -36,6 +36,8 @@
   color: var(--green-2);
 }
 
+
+
 li > a::after {
   content: "";
   display: block;
@@ -744,4 +746,34 @@ padding: var(--most-used-em);
 }
  /* When you'll start formster add button that opens volunteering form in new tab ONLY ON MOBILE */
 
+#podcast-episodes{
+  margin-top: 5em;
+  background-color: var(--green-2);
+}
 
+.episode-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  }
+
+  .episode-container img{
+    width: 20em;
+    height: 20em;
+    padding: var(--most-used-em);
+  }
+
+.episode-item:nth-child(1) {
+  order: 0;
+  flex: 0 1 auto;
+  align-self: auto;
+  }
+
+.episode-item:nth-child(2) {
+  order: 0;
+  flex: 0 1 auto;
+  align-self: auto;
+  }
