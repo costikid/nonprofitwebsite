@@ -682,6 +682,22 @@ padding: var(--most-used-em);
   padding: 1em;
 }
 
+.volunteer-btn{
+  
+    display: inline-block;
+    font-size: 0.5em;
+    background: var(--green-2);
+    padding: 10px 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 500;
+    margin-top: 10px;
+    color: var(--light);
+    letter-spacing: 2px;
+    transition: 0.2s;
+    border: none;
+  }
+
 
 .footer{
   width: 100%;
@@ -777,7 +793,8 @@ padding: var(--most-used-em);
   flex: 0 1 auto;
   align-self: auto;
   }
- @media (max-width: 768px){
+
+  @media (max-width: 768px){
     #podcast-episodes iframe{
         width: 300px;
   
