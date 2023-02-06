@@ -696,6 +696,7 @@ padding: var(--most-used-em);
     letter-spacing: 2px;
     transition: 0.2s;
     border: none;
+  display: none;
   }
 
 
