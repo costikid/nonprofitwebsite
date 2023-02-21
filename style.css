@@ -575,6 +575,10 @@ background-color: var(--green-3);
 
 }
 
+#visit{
+  display: none;
+}
+
 .founder-grid {  display: grid;
     grid-template-columns: 0.7fr 1.3fr;
     grid-template-rows: 1fr;
@@ -696,7 +700,6 @@ padding: var(--most-used-em);
     letter-spacing: 2px;
     transition: 0.2s;
     border: none;
-  display: none;
   }
 
 
