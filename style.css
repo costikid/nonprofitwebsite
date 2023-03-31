@@ -532,33 +532,7 @@ background-color: var(--green-3);
     transform: scale(1);
 }
 
-#visit{
-  background-color: var(--green-1);
-}
 
-#visit a
-{
-  display: inline-block;
-  font-size: 0.5em;
-  background: var(--green-2);
-  padding: 10px 30px;
-  text-transform: uppercase;
-  text-decoration: none;
-  font-weight: 500;
-  margin-top: 10px;
-  color: var(--light);
-  letter-spacing: 2px;
-  transition: 0.2s;
-}
-#visit a:focus
-{
-  background-color: var(--green-2);
-  color: var(--light);
-}
-
-#visit a:active{
-  background-color: var(--green-2);
-}
 
 
 @media (max-width: 768px){
@@ -575,9 +549,7 @@ background-color: var(--green-3);
 
 }
 
-#visit{
-  display: none;
-}
+
 
 .founder-grid {  display: grid;
     grid-template-columns: 0.7fr 1.3fr;
@@ -677,7 +649,7 @@ padding: var(--most-used-em);
   padding: var(--most-used-em);
 }
 
-.podcast-img, .email-img{
+.podcast-img, .icon-img{
   width: 150px;
   padding: var(--most-used-em);
 }
