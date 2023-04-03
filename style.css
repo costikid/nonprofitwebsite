@@ -612,10 +612,10 @@ background-color: var(--green-3);
     letter-spacing: 2px;
     transition: 0.2s;
   }
-  #fundraising a:focus
+  #fundraising a:hover
   {
     background-color: var(--green-1);
-    color: var(--light);
+    
   }
 
   #fundraising a:active{
@@ -658,7 +658,7 @@ padding: var(--most-used-em);
   padding: 1em;
 }
 
-.volunteer-btn{
+.general-btn{
   
     display: inline-block;
     font-size: 0.5em;
@@ -673,6 +673,12 @@ padding: var(--most-used-em);
     transition: 0.2s;
     border: none;
   }
+
+  .general-btn:hover{
+    background-color: var(--green-1);
+  }
+
+  
 
 
 .footer{
