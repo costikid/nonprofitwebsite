@@ -19,6 +19,9 @@
 
   
 }
+h1{
+  color: var(--light);
+}
 
 .logo-icon{
   width: calc(var(--most-used-em) + 2.5em);
