@@ -15,7 +15,7 @@
     --dark:#111;
     --most-used-em: 1em;
     --frequent-font-size: 1.5em;
-    --frequent-percentage: var(--frequent-percentage);
+    --frequent-percentage: 100%;
 
   
 }
@@ -180,8 +180,8 @@ header .logo
   position: absolute;
   top: 0;
   left: 0;
-  width: var(--frequent-percentage);
-  height: var(--frequent-percentage);
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   opacity: 0.3;
 }
@@ -190,8 +190,8 @@ header .logo
   position: absolute;
   top: 0;
   left: 0;
-  width: var(--frequent-percentage);
-  height: var(--frequent-percentage);
+  width: 100%;
+  height: 100%;
   mix-blend-mode: overlay;
 }
 .hero-text
@@ -287,7 +287,7 @@ header .logo
   top: 0;
   right: 0;
   width: 300px;
-  height: var(--frequent-percentage);
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -686,7 +686,7 @@ padding: var(--most-used-em);
 
 
 .footer{
-  width: var(--frequent-percentage);
+  width: 100%;
   text-align: center;
   padding: 30px 0;
   background-color: var(--green-1);
