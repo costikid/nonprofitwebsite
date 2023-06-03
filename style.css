@@ -15,10 +15,14 @@
     --dark:#111;
     --most-used-em: 1em;
     --frequent-font-size: 1.5em;
+    --frequent-percentage: var(--frequent-percentage);
+
+  
 }
 
 .logo-icon{
-  width: 3.5em;
+  width: calc(var(--most-used-em) + 2.5em);
+
 }
 .navbar{
   background-color: var(--green-1);
@@ -51,7 +55,7 @@ li > a::after {
 }
 
 li > a:hover::after, li > a.active-nav::after {
-  width: 100%;
+  width: var(--frequent-percentage);
   background: var(--light);
 }
 .navbar-toggler {
@@ -79,7 +83,7 @@ color: transparent;}
   display: block;
   position: absolute;
   height: 3px;
-  width: 100%;
+  width: var(--frequent-percentage);
   background: var(--light);
   border-radius: 1px;
   opacity: 1;
@@ -138,7 +142,7 @@ header
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  width: var(--frequent-percentage);
   padding: 40px 100px;
   z-index: 1000;
   display: flex;
@@ -149,14 +153,14 @@ header .logo
 {
   width: 50px;
   background-color: var(--light);
-  margin-top: 1em;
+  margin-top: var(--most-used-em);
 }
 
 .showcase
 {
   position: relative;
   right: 0;
-  width: 100%;
+  width: var(--frequent-percentage);
   min-height: 100vh;
   padding: 100px;
   display: flex;
@@ -176,8 +180,8 @@ header .logo
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: var(--frequent-percentage);
+  height: var(--frequent-percentage);
   object-fit: cover;
   opacity: 0.3;
 }
@@ -186,8 +190,8 @@ header .logo
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: var(--frequent-percentage);
+  height: var(--frequent-percentage);
   mix-blend-mode: overlay;
 }
 .hero-text
@@ -198,7 +202,7 @@ header .logo
 
 .hero-text h3
 {
-  font-size: 2.5em;
+  font-size: calc(var(--frequent-font-size) - 1em);
   font-weight: 800;
   color: var(--light);
   line-height: var(--most-used-em);
@@ -223,11 +227,11 @@ header .logo
 
 @media (max-width: 768px){
   .hero-text h3{
-      font-size: 1.6em;
+      font-size: calc(var(--frequent-font-size) + 0.1em);
 
 }
 .hero-text h4{
-  font-size: 1.7em;
+  font-size: calc(var(--frequent-font-size) + 0.2em);
 }
 
 
@@ -283,7 +287,7 @@ header .logo
   top: 0;
   right: 0;
   width: 300px;
-  height: 100%;
+  height: var(--frequent-percentage);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -314,7 +318,7 @@ header .logo
 
 @media (min-width: 991px) {
   #subjects-section{
-    height: 60em;
+    height: calc(var(--most-used-em) + 59em);
   }
 }
 
@@ -322,13 +326,13 @@ header .logo
   font-size: 1em;
   color: var(--light);
   text-align: center;
-  padding: 0.5em;
+  padding: calc(var(--most-used-em) - 0.5em);
 }
 
 .section-title{
 color: var(--light);
 text-align: center;
-font-size: 3em;
+font-size: calc(var(--frequent-font-size) + 1.5em);
 padding: var(--most-used-em);
 background-color: var(--green-3);
 }
@@ -396,11 +400,11 @@ background-color: var(--green-3);
   }
   .text h2
   {
-    font-size: 3em;
+    font-size: calc(var(--frequent-font-size) + 1,5em);
   }
   .text h3
   {
-    font-size: 2em;
+    font-size: calc(var(--frequent-font-size) + 0.5em);
   }
 }
 #about{
@@ -601,7 +605,7 @@ background-color: var(--green-3);
   #fundraising a
   {
     display: inline-block;
-    font-size: 0.5em;
+    font-size: calc(var(--frequent-font-size) - 1em);
     background: var(--green-2);
     padding: 10px 30px;
     text-transform: uppercase;
@@ -627,7 +631,7 @@ background-color: var(--green-3);
   .section-title-contact{
     color: var(--light);
     text-align: center;
-    font-size: 3em;
+    font-size: calc(var(--frequent-font-size) + 2.5em);
     padding: var(--most-used-em);
     background-color: var(--green-1);
     }
@@ -661,7 +665,7 @@ padding: var(--most-used-em);
 .general-btn{
   
     display: inline-block;
-    font-size: 0.5em;
+    font-size: calc(var(--frequent-font-size) - 1em);
     background: var(--green-2);
     padding: 10px 30px;
     text-transform: uppercase;
@@ -682,7 +686,7 @@ padding: var(--most-used-em);
 
 
 .footer{
-  width: 100%;
+  width: var(--frequent-percentage);
   text-align: center;
   padding: 30px 0;
   background-color: var(--green-1);
@@ -732,12 +736,12 @@ padding: var(--most-used-em);
 
 .formster{
   display: none;
-  height: 30em;
+  height: calc(var(--most-used-em) + 29em);
 }
 
 @media (max-width: 768px){
   .formster{
-      height: 45em;
+      height: calc(var(--most-used-em) + 44em); 
       width: max-content;
 
 }
@@ -745,7 +749,7 @@ padding: var(--most-used-em);
  /* When you'll start formster add button that opens volunteering form in new tab ONLY ON MOBILE */
 
 #podcast-episodes{
-  margin-top: 5em;
+  margin-top: calc(var(--most-used-em) + 4em);
   background-color: var(--green-2);
 }
 
