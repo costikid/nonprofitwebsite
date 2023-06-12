@@ -19,7 +19,7 @@
 
   
 }
-h1{
+h1, h2{
   color: var(--light);
 }
 
@@ -207,7 +207,6 @@ header .logo
 {
   font-size: var(--frequent-font-size);
   font-weight: 800;
-  color: var(--light);
   line-height: var(--most-used-em);
   text-transform: uppercase;
 }
