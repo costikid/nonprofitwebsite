@@ -203,9 +203,9 @@ header .logo
   z-index: 10;
 }
 
-.hero-text h3
+.hero-text h2
 {
-  font-size: calc(var(--frequent-font-size) - 1em);
+  font-size: var(--frequent-font-size);
   font-weight: 800;
   color: var(--light);
   line-height: var(--most-used-em);
