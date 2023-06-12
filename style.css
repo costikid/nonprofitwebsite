@@ -423,7 +423,7 @@ background-color: var(--green-3);
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(media/kibera-1.png);
+    background-image: url(media/kibera-1.webp);
     background-position: center;
     background-size: cover;
 }
@@ -454,7 +454,7 @@ background-color: var(--green-3);
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(media/kibera-2.png);
+    background-image: url(media/kibera-2.webp);
     background-position: center;
     background-size: cover;
 }
@@ -485,7 +485,7 @@ background-color: var(--green-3);
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(media/kibera-3.jpg);
+    background-image: url(media/kibera-3.webp);
     background-position: center;
     background-size: cover;
 }
@@ -516,7 +516,7 @@ background-color: var(--green-3);
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(media/kibera-4.jpg);
+    background-image: url(media/kibera-4.webp);
     background-position: center;
     background-size: cover;
 }
