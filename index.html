@@ -1,792 +1,375 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
-*
-{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-}
+<!DOCTYPE html>
+<html lang="en">
 
-:root{
-    --green-1:#1a4331;
-    --green-2:#41916c;
-    --green-3:#2c664e;
-    --light:#fff;
-    --dark:#111;
-    --most-used-em: 1em;
-    --frequent-font-size: 1.5em;
-    --frequent-percentage: 100%;
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YYGH58SE7V"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'G-YYGH58SE7V');
+</script>
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@watotocoding" />
+  <meta name="twitter:title" content="Watoto Coding" />
+  <meta name="twitter:description" content="Tech skills for the kids in the slums of Nairobi" />
+  <meta name="twitter:image" content="https://www.watotocoding.com/media/girlscoding.jpeg" />
+
+
+
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" user-scalable=yes>
+  <meta name="description" content="We bring tech skills to the kids living in the slums of Kenya">
+  <meta name="keywords"
+    content="kids, tech, coding, education, non-profit, lessons, learn, charity, Africa, Kenya, slums, Nairobi, stem, steam, skills">
+  <meta name="author" content="Watoto coding">
+  <meta name="title" content="Watoto coding">
+  <meta property="og:type" content="website" />
+
+  <meta property="og:title" content="Watoto Coding" />
+  <meta property="og:description" content="We bring tech skills to the kids living in the slums of Kenya">
+  <meta property="og:image" content="https://www.watotocoding.com/media/girlscoding.jpeg">
   
-}
-h1{
-  color: var(--light);
-}
-
-.logo-icon{
-  width: calc(var(--most-used-em) + 2.5em);
-
-}
-.navbar{
-  background-color: var(--green-1);
-}
-.navbar a{
-  color: var(--light);
-  padding: var(--most-used-em);
-}
-
-
-.navbar a:visited{
-  color: var(--light);
-}
-.navbar a:hover{
-  color: var(--green-2);
-}
-
-
-
-li > a::after {
-  content: "";
-  display: block;
-  margin: auto;
-  height: 3px;
-  width: 0;
-  top: 5px;
-  background: transparent;
-  transition: all 0.3s;
-  
-}
-
-li > a:hover::after, li > a.active-nav::after {
-  width: var(--frequent-percentage);
-  background: var(--light);
-}
-.navbar-toggler {
-  width: 20px;
-  height: 20px;
-  position: relative;
-  transition: .5s ease-in-out;
-color: transparent;}
-
-.navbar-toggler,
-.navbar-toggler:focus,
-.navbar-toggler:active,
-.navbar-toggler-icon:focus {
-  outline: none;
-  box-shadow: none;
-  border: 0;
-}
-
-.navbar-toggler span {
-  margin: 0;
-  padding: 0;
-}
-
-.toggler-icon {
-  display: block;
-  position: absolute;
-  height: 3px;
-  width: var(--frequent-percentage);
-  background: var(--light);
-  border-radius: 1px;
-  opacity: 1;
-  left: 0;
-  transform: rotate(0deg);
-  transition: .25s ease-in-out;
-}
-
-.middle-bar {
-  margin-top: 0px;
-}
-
-/* when navigation is clicked */
-
-.navbar-toggler .top-bar {
-  margin-top: 0px;
-  transform: rotate(135deg);
-}
-
-.navbar-toggler .middle-bar {
-  opacity: 0;
-  filter: alpha(opacity=0);
-}
-
-.navbar-toggler .bottom-bar {
-  margin-top: 0px;
-  transform: rotate(-135deg);
-}
-
-/* State when the navbar is collapsed */
-
-.navbar-toggler.collapsed .top-bar {
-  margin-top: -20px;
-  transform: rotate(0deg);
-}
-
-.navbar-toggler.collapsed .middle-bar {
-  opacity: 1;
-  filter: alpha(opacity=100);
-}
-
-.navbar-toggler.collapsed .bottom-bar {
-  margin-top: 20px;
-  transform: rotate(0deg);
-}
-
-/* Color of 3 lines */
-
-.navbar-toggler.collapsed .toggler-icon {
-  background: var(--light);
-}
-
-
-header
-{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: var(--frequent-percentage);
-  padding: 40px 100px;
-  z-index: 1000;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-header .logo
-{
-  width: 50px;
-  background-color: var(--light);
-  margin-top: var(--most-used-em);
-}
-
-.showcase
-{
-  position: relative;
-  right: 0;
-  width: var(--frequent-percentage);
-  min-height: 100vh;
-  padding: 100px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: var(--green-2);
-  transition: 0.5s;
-  z-index: 2;
-}
-.showcase.active
-{
-  right: 300px;
-}
-
-.showcase video
-{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  opacity: 0.2;
-}
-.overlay
-{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  mix-blend-mode: overlay;
-}
-.hero-text
-{
-  position: relative;
-  z-index: 10;
-}
-
-.hero-text h3
-{
-  font-size: calc(var(--frequent-font-size) - 1em);
-  font-weight: 800;
-  color: var(--light);
-  line-height: var(--most-used-em);
-  text-transform: uppercase;
-}
-.hero-text h4
-{
-  font-size: 2em;
-  font-weight: 700;
-  color: var(--light);
-  line-height: var(--most-used-em);
-  text-transform: uppercase;
-}
-.hero-text p
-{
-  font-size: 1.1em;
-  color: var(--light);
-  margin: 20px 0;
-  font-weight: 400;
-  max-width: 700px;
-}
-
-@media (max-width: 768px){
-  .hero-text h3{
-      font-size: calc(var(--frequent-font-size) + 0.1em);
-
-}
-.hero-text h4{
-  font-size: calc(var(--frequent-font-size) + 0.2em);
-}
-
-
-
-}
-.hero-text a
-{
-  display: inline-block;
-  font-size: var(--most-used-em);
-  background: var(--green-1);
-  padding: 10px 30px;
-  text-transform: uppercase;
-  text-decoration: none;
-  font-weight: 500;
-  margin-top: 10px;
-  color: var(--light);
-  letter-spacing: 2px;
-  transition: 0.2s;
-}
-.hero-text a:hover
-{
-  background-color: var(--green-2);
-  color: var(--light);
-}
-.social
-{
-  position: absolute;
-  z-index: 10;
-  bottom: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.social li
-{
-  list-style: none;
-}
-.social li a
-{
-  display: inline-block;
-  margin-right: 20px;
-  filter: invert(1);
-  transform: scale(0.5);
-  transition: 0.5s;
-}
-.social li a:hover
-{
-  transform: scale(0.5) translateY(-15px);
-}
-.menu
-{
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 300px;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.menu ul
-{
-  position: relative;
-}
-.menu ul li
-{
-  list-style: none;
-}
-.menu ul li a
-{
-  text-decoration: none;
-  font-size: 24px;
-  color: var(--dark);
-}
-.menu ul li a:hover
-{
-  color: var(--green-3); 
-}
-
-#subjects-section{
-    background-color: var(--green-1);
-}
-
-
-@media (min-width: 991px) {
-  #subjects-section{
-    height: calc(var(--most-used-em) + 59em);
-  }
-}
-
-.subjects p{
-  font-size: 1em;
-  color: var(--light);
-  text-align: center;
-  padding: calc(var(--most-used-em) - 0.5em);
-}
-
-.section-title{
-color: var(--light);
-text-align: center;
-font-size: calc(var(--frequent-font-size) + 1.5em);
-padding: var(--most-used-em);
-background-color: var(--green-3);
-}
-.section-title h1{
-    font-size: var(--most-used-em);
-    }
-.subjects h2{
-    color: var(--light);
-    text-align: center;
-    padding: var(--most-used-em);
-}
-
-.subjects {  display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr;
-    grid-auto-columns: 1fr;
-    grid-auto-rows: 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "subject-1 subject-2 subject-3";
-      padding: var(--most-used-em);
-  }
-  
-  .subject-1 {
-    justify-self: center;
-    align-self: center;
-    grid-area: subject-1;
-    padding: var(--most-used-em);
-  }
-  
-  .subject-2 {
-    justify-self: center;
-    align-self: center;
-    grid-area: subject-2;
-    padding: var(--most-used-em);
-
-  }
-  
-  .subject-3 {
-    justify-self: center;
-    align-self: center;
-    grid-area: subject-3;
-    padding: var(--most-used-em);
-
-  }
-
-
-
-  @media (max-width: 768px){
-    .subjects{
-        display: flex;
-        flex-direction: column;
-        max-width: 100vw;
-    }
-
-}
-
-@media (max-width: 991px)
-{
-  .showcase,
-  .showcase header
-  {
-    padding: 40px;
-  }
-  .text h2
-  {
-    font-size: calc(var(--frequent-font-size) + 1,5em);
-  }
-  .text h3
-  {
-    font-size: calc(var(--frequent-font-size) + 0.5em);
-  }
-}
-#about{
-    display: flex;
-    flex-direction: row;
-    padding: var(--most-used-em);
-    background-color: var(--green-3);
-}
-.kibera-1{
-    width: 500px;
-    height: 281px;
-    transition: 0.5;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url(media/kibera-1.webp);
-    background-position: center;
-    background-size: cover;
-}
-
-.kibera-1 h3{
-    opacity: 0;
-    transform: scale(0);
-    transition: 0.8s;
-    color: var(--light);
-    padding: var(--most-used-em);
-    font-size: var(--frequent-font-size);
-}
-
-.kibera-1:hover{
-    box-shadow: 0 0 0 200px rgba(0, 0, 0, 0.9) inset;
-}
-
-.kibera-1:hover h3{
-    opacity: 1;
-    transform: scale(1);
-}
-
-
-.kibera-2{
-    width: 500px;
-    height: 281px;
-    transition: 0.5;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url(media/kibera-2.webp);
-    background-position: center;
-    background-size: cover;
-}
-
-.kibera-2 h3{
-    opacity: 0;
-    transform: scale(0);
-    transition: 0.8s;
-    color: var(--light);
-    padding: var(--most-used-em);
-    font-size: var(--frequent-font-size);
-}
-
-.kibera-2:hover{
-    box-shadow: 0 0 0 200px rgba(0, 0, 0, 0.9) inset;
-}
-
-.kibera-2:hover h3{
-    opacity: 1;
-    transform: scale(1);
-}
-
-
-.kibera-3{
-    width: 500px;
-    height: 281px;
-    transition: 0.5;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url(media/kibera-3.webp);
-    background-position: center;
-    background-size: cover;
-}
-
-.kibera-3 h3{
-    opacity: 0;
-    transform: scale(0);
-    transition: 0.8s;
-    color: var(--light);
-    padding: var(--most-used-em);
-    font-size: var(--frequent-font-size);
-}
-
-.kibera-3:hover{
-    box-shadow: 0 0 0 200px rgba(0, 0, 0, 0.9) inset;
-}
-
-.kibera-3:hover h3{
-    opacity: 1;
-    transform: scale(1);
-}
-
-
-.kibera-4{
-    width: 500px;
-    height: 281px;
-    transition: 0.5;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url(media/kibera-4.webp);
-    background-position: center;
-    background-size: cover;
-}
-
-.kibera-4 h3{
-    opacity: 0;
-    transform: scale(0);
-    transition: 0.8s;
-    color: var(--light);
-    padding: var(--most-used-em);
-    font-size: var(--frequent-font-size);
-}
-
-.kibera-4:hover{
-    box-shadow: 0 0 0 200px rgba(0, 0, 0, 0.9) inset;
-}
-
-.kibera-4:hover h3{
-    opacity: 1;
-    transform: scale(1);
-}
-
-
-
-
-@media (max-width: 768px){
-    #about{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-}
-
-.kibera-1, .kibera-2, .kibera-3, .kibera-4{
-    max-width: 95vw;
-}
-
-}
-
-
-
-.founder-grid {  display: grid;
-    grid-template-columns: 0.7fr 1.3fr;
-    grid-template-rows: 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    justify-content: center;
-    align-content: center;
-    justify-items: center;
-    align-items: center;
-    grid-template-areas:
-      "leonard-photo leonard-bio";
-      padding: var(--most-used-em);
-      background-color: var(--green-1);
-
-  }
-  
-  .team-photo {
-    justify-self: center;
-    align-self: center;
-    grid-area: leonard-photo;
-    padding: var(--most-used-em);
-  }
-  
-  .team-bio {
-    justify-self: center;
-    align-self: center;
-    grid-area: leonard-bio;
-    text-align: center;
-    color: var(--light);
-    padding: 5em;
-    font-size: var(--frequent-font-size);
-  }
-  @media (max-width: 768px){
-    .founder-grid{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-}
-
-.team-bio{
-    padding: var(--most-used-em);
+  <link rel="icon" type="image/x-icon" href="media/Watoto-New-Logo.jpg">
+
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <title>Watoto Coding Hub</title>
+  <script src="https://app.formester.com/widget/popup.js" type="module" ></script>
+
+</head>
+
+<body>
+
+
+  <section id="navigation">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg py-3 fixed-top">
+      <div class="container"><a href="#hero" >
+          <img class="img-fluid logo-icon" src="media/Watoto-New-Logo.webp" alt="logo of Watoto Coding">
+         </a>
+         <button class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+           <span class="toggler-icon top-bar"></span>
+           <span class="toggler-icon middle-bar"></span>
+           <span class="toggler-icon bottom-bar"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarNav">
+           <ul class="navbar-nav">
+             <li class="nav-item">
+               <a class="nav-link active" aria-current="page" href="#showcase">Home - </a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" href="#subjects-section">What we teach - </a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" href="#about">Kibera  - </a>
+             </li>
+             <li class="nav-item">
+              <a class="nav-link" href="#team">Team - </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#fundraising">Fundraising - </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#volunteer">Volunteer - </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#visit">Visit - </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://podcasters.spotify.com/pod/show/watotocoding" target="_blank">Podcast - </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            
+           </ul>
+         </div>
+       </div>
+     </nav>
+ 
+   </div>
+
+
+        
+          
+          </section>
+
+
+
+
+  <section class="showcase" id="showcase">
+    <header>
+      <div class="toggle"></div>
+    </header>
+    <video src="media/hero-video.mp4" muted loop autoplay playsinline></video>
+    <div class="overlay"></div>
+    <div class="hero-text">
+      <h1>Watoto Coding Hub</h1>
+      <h4>A hub for learners within marginalized communities</h4>
+      <p>We untap the potential of kids living in the slums of Kibera by teaching STEM skills and creating a community of motivated learners
+      </p>
+      <a href="#subjects-section">Learn more</a>
+      <a href="#visit">Book a visit</a>
+
+    </div>
+    <ul class="social">
+      <li><a href="https://www.facebook.com/storozetu" target="_blank"
+          rel="noopener noreferrer"><img src="https://i.ibb.co/x7P24fL/facebook.png" aria-label="Facebook" alt="Icon of Facebook" ></a></li>
+      <li><a href="https://twitter.com/watotocoding" target="_blank"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png"
+            rel="noopener noreferrer" aria-label="Twitter" alt="Icon of twitter"></a></li>
+      <li><a href="https://www.instagram.com/watoto_coding_hub/" target="_blank"><img
+            src="https://i.ibb.co/ySwtH4B/instagram.png" aria-label="Instagram" alt="icon of instagram" rel="noopener noreferrer"></a></li>
+    </ul>
+  </section>
+
+
+
+  </section>
+
+  <section id="subjects-section">
+    <div class="section-title">
+
+      <h1>What do we do?</h1>
+      <h3>We run a Saturday programme to teach 30 kids aged 7-16.
+
+      </h3>
+    </div>
+    <div class="subjects">
+      <div class="subject-1"><img class="img-fluid" loading="lazy" alt="image that represents the coding subject taught to kids" src="media/code.webp">
+        <h2>Coding</h2>
+      </div>
+
+      <p>We teach computational thinking and programming logic
+      </p>
+      <div class="subject-2"><img loading="lazy" class="img-fluid" alt="image that represents the 3D design subject taught to kids" src="media/3D.webp">
+        <h2>Engineering</h2>
+
+      </div>
+      <p>Hands on learning through unplugged activities to stimulate logical and practical thinking
+      </p>
+      <div class="subject-3"><img loading="lazy" class="img-fluid" alt="image that represents the game design subject taught to kids" src="media/game.webp">
+        <h2>Game Design</h2>
+      </div>
+      <p>Our kids create games using Scratch Jr, a block-based coding application
+      </p>
+    </div>
+  </section>
+  <div class="section-title" id="about-section">
+    <h1>About</h1>
+    <h3>We work in Kibera, a vast slum in Kenya’s capital city, Nairobi, currently the largest unplanned settlement in
+      the world.</h3>
+  </div>
+
+
+
+  </h3>
+  <section id="about">
+
+    <div class="kibera-1">
+      <h3>It’s unclear how many people live in Kibera but estimates range from 1 million to 1.5million people living in
+        just 2.25 square kilometres.
+
+      </h3>
+
+    </div>
+    <div class="kibera-2">
+      <h3>Residents live in cramped one-roomed homes made of mud and iron sheets. Water is collected in
+        jerry cans from water points around the slum.
+
+
+
+      </h3>
+
+    </div>
+    <div class="kibera-3">
+      <h3>Life is hard in Kibera but many face the challenges with strength. It is a lively place to
+        be. As you walk around you hear music blaring and people talking.
+
+
+
+
+
+      </h3>
+
+    </div>
+    <div class="kibera-4">
+      <h3>There are no public schools, hospitals or clinics in Kibera though there are many run by community members and
+        NGOs.
+
+      </h3>
+
+    </div>
     
-}
-
-  }
-
-  #fundraising a
-  {
-    display: inline-block;
-    font-size: calc(var(--frequent-font-size) - 1em);
-    background: var(--green-2);
-    padding: 10px 30px;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-weight: 500;
-    margin-top: 10px;
-    color: var(--light);
-    letter-spacing: 2px;
-    transition: 0.2s;
-  }
-  #fundraising a:hover
-  {
-    background-color: var(--green-1);
+    </div>
     
-  }
+  </section>
 
-  #fundraising a:active{
-    background-color: var(--green-1);
-  }
+  <div class="section-title">
+    <h1>Team</h1>
+    <h3>The team is made of two main members and 20 passionate volunteers
+
+    </h3>
+  </div>
+  <section id="team">
+    <div class="founder-grid">
+      <div class="team-photo"><img loading="lazy" class="img-fluid" alt="photo of Leonard, founder of Watoto Coding" loading="lazy" src="media/leonard.webp"></div>
+      <div class="team-bio">
+        <p>Leonard Onyango was born & raised in Kibera Slums, he is amongst the lucky students who got sponsorship to
+          pursue further education in the midst of harsh conditions.<br>
+
+          He taught basic computer skills and graphic design in different colleges. Along the way, he discovered great
+          platforms like Coder Kids, Endless OS, Roblox, Autodesk - Tinkercad and many more which inspired him to pursue
+          his interest in giving back to the marginalized communities through teaching kids ICT in creative ways.</p>
+      </div>
+    </div>
+
+    <div class="founder-grid">
+      <div class="team-photo"><img loading="lazy" class="img-fluid" alt="photo of Costanza, co-founder of Watoto Coding" loading="lazy" src="media/costanzaprofile.webp"></div>
+      <div class="team-bio">
+        <p>
+          Costanza Casullo is from Italy and joined Watoto Coding as a volunteer in 2022.
+          She is a techie passionate about web design and game development and currently
+          helps Watoto Coding with social media, outreach, creating the website and curriculum development.
+        </p>
+      </div>
+    </div>
+
+  </section>
+
+  <section id="fundraising">
+    <div>
+    </div>
+    <div class="section-title">
+      <img class="img-fluid icon-img" alt="an icon showing a box with a heart and coins going inside" src="media/donate-icon.webp">
+      <h1>Fundraising</h1>
+      <h3>Kids do not have laptops or a stable internet connection and it's
+        becoming increasingly hard for us to provide them with the education they deserve.
+        See our fundraising document below.
+      </h3>
+      <a href="https://www.canva.com/design/DAFEiSc3UjA/view?utm_content=DAFEiSc3UjA&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink"
+      rel="noopener noreferrer" target="_blank">View the document</a>
 
 
 
-  .section-title-contact{
-    color: var(--light);
-    text-align: center;
-    font-size: calc(var(--frequent-font-size) + 2.5em);
-    padding: var(--most-used-em);
-    background-color: var(--green-1);
-    }
+    </div>
+    <div class="section-title" id="volunteer">
+      <img class="img-fluid icon-img" alt="an icon showing hands on top of each other symbolising volunteers helping each other" src="media/volunteer-icon.webp">
 
-  .contact-container {  display: flex;
-flex-direction: column;
-align-items: center;
-background-color: var(--green-1);
-padding: var(--most-used-em);
-}
+      <h1>Volunteer</h1>
 
-.contact-container h3{
-  color: var(--light);
-  text-align: center;
-}
+      <h3>Did you know you can make an impact from a distance too? Do you want to help us bring tech skills to the kids
+        living in the slums of Nairobi?
+      </h3>
+      <formester-popup id="7d08db5f-d36a-4afd-baf9-f75b4b442fae" width="900px" height="95%" ></formester-popup>
+      <button class="general-btn" onclick="Formester.openPopup('7d08db5f-d36a-4afd-baf9-f75b4b442fae')">How?</button>
 
-.contact-img{
-  width: 100px;
-  padding: var(--most-used-em);
-}
+      
+      
+    </div>
 
-.podcast-img, .icon-img{
-  width: 150px;
-  padding: var(--most-used-em);
-}
+    <div class="section-title" id="visit">
+      <img class="img-fluid icon-img" alt="an icon showing a random map with a pin" src="media/visit-icon.webp">
+      <h1>Visit us in person</h1>
 
-.newsletter{
-  padding: 1em;
-}
+      <h3>Come to Kibera and meet the founder and our kids.  
+      </h3>
+      <formester-popup id="e876c2e6-9502-4079-97fc-ab8965cdc703" width="900px" height="95%" ></formester-popup>
+      <button class="general-btn" onclick="Formester.openPopup('e876c2e6-9502-4079-97fc-ab8965cdc703')">Book a visit</button>
 
-.general-btn{
+      
+      
+    </div>
+    <div class="section-title" id="visit">
+      <img class="img-fluid icon-img" alt="an icon a laptop with people having a video meeting" src="media/virtual.webp">
+      <h1>Virtual visit</h1>
+
+      <h3>For anyone who wants to experience our teaching approach and meet our founder and kids virtually. 
+      </h3>
+      <formester-popup id="e876c2e6-9502-4079-97fc-ab8965cdc703" width="900px" height="95%" ></formester-popup>
+      <a href="https://tidycal.com/watotocoding/watoto-coding-virtual-visit-july-august"
+      rel="noopener noreferrer" target="_blank">Book a virtual visit</a>
+      
+      
+    </div>
+  </section>
+  <div class="section-title-contact">
+    <h1>Contact</h1>
+
+  </div>
+  <section id="contact">
+    <div class="contact-container">
+
+
+      <div class="email">
+        <h3>Email us</h3> <a href="mailto:info@watotocoding.org
+        "rel="noopener noreferrer"><img class="img-fluid icon-img" alt="icon of an email" src="media/email.webp"></a>
+      </div>
+      <div class="call">
+        <h3>Call us</h3> <a href="tel:+254 759 783 366
+        "rel="noopener noreferrer"><img class="img-fluid contact-img" alt="icon of a phone" src="media/phone.webp"></a>
+      </div>
+      <div class="podcast">
+        <h3>Podcast</h3> <a href="https://anchor.fm/watotocoding" target="_blank"><img class="img-fluid podcast-img" src="media/mic-icon.webp" alt="icon of a microphone"></a>
+      </div>
+      <h3 class="newsletter">Subscribe to our newsletter!</h3>
+      <iframe title="iframe to subscribe to the newsletter" src="https://embeds.beehiiv.com/a98ce480-96a1-4bc7-9ff0-afd0f3605950?slim=true" data-test-id="beehiiv-embed" frameborder="0" scrolling="no" style="margin: 0; border-radius: 0px !important; background-color: transparent;"></iframe>
+     
+    </div>
+
+    
+  </section>
+
+  <section class="footer">
+
+    <h1>Watoto Coding Community Hub <br>
+      Kibera-Nairobi, Kenya
+      <br>
+      A charity registered under the NGO Coordination Act No 19 of 1990
+    </h1>
+
+
+    <div class="icons">
+      <a href="https://www.facebook.com/storozetu" target="_blank" aria-label="Facebook"
+        rel="noopener noreferrer"><i class="fa fa-facebook" aria-hidden="true" ></i></a>
+      <a href="https://twitter.com/watotocoding" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i
+          class="fa fa-twitter" ></i></a>
+      <a href="https://www.instagram.com/watoto_coding_hub/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i
+          class="fa fa-instagram" ></i></a>
+      <p>Website made by<a href="https://costanza.me" target="_blank" rel="noopener noreferrer">
+          Costanza</a></p>
+
+    </div>
+
+ 
+
+
+
+  </section>
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
+  <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+  <script>
+    kofiWidgetOverlay.draw('watotocoding', {
+      'type': 'floating-chat',
+      'floating-chat.donateButton.text': 'Donate',
+      'floating-chat.donateButton.background-color': '#5cb85c',
+      'floating-chat.donateButton.text-color': '#fff'
+    });
+  </script>
+
   
-    display: inline-block;
-    font-size: calc(var(--frequent-font-size) - 1em);
-    background: var(--green-2);
-    padding: 10px 30px;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-weight: 500;
-    margin-top: 10px;
-    color: var(--light);
-    letter-spacing: 2px;
-    transition: 0.2s;
-    border: none;
-  }
+</body>
 
-  .general-btn:hover{
-    background-color: var(--green-1);
-  }
-
-  
-
-
-.footer{
-  width: 100%;
-  text-align: center;
-  padding: 30px 0;
-  background-color: var(--green-1);
-  
-}
-
-
-.footer h4{
-  margin-bottom: 25px;
-  margin-top: 20px;
-  font-weight: 600;
-  
-}
-
-.footer h1{
-  padding: 1em;
-}
-
-.fa{
-  color: #ffffff;
-  margin: 0 13px;
-  cursor: pointer;
-  padding: 18px 0;
-}
-
-.fa:hover{
-  color: var(--green-2);
-}
-
-.footer h1{
-  color: var(--light);
-  font-size: var(--most-used-em);
-}
-
-.footer p{
-  color: var(--light);
-}
-
-.footer a{
-  text-decoration: none;
-  color: var(--light);
-}
-
-.footer a:hover{
-  color: var(--green-2);
-}
-
-.formster{
-  display: none;
-  height: calc(var(--most-used-em) + 29em);
-}
-
-@media (max-width: 768px){
-  .formster{
-      height: calc(var(--most-used-em) + 44em); 
-      width: max-content;
-
-}
-}
- /* When you'll start formster add button that opens volunteering form in new tab ONLY ON MOBILE */
-
-#podcast-episodes{
-  margin-top: calc(var(--most-used-em) + 4em);
-  background-color: var(--green-2);
-}
-
-.episode-container {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  }
-
-  .episode-container img{
-    width: 20em;
-    height: 20em;
-    padding: var(--most-used-em);
-  }
-
-.episode-item:nth-child(1) {
-  order: 0;
-  flex: 0 1 auto;
-  align-self: auto;
-  }
-
-.episode-item:nth-child(2) {
-  order: 0;
-  flex: 0 1 auto;
-  align-self: auto;
-  }
-
-  @media (max-width: 768px){
-    #podcast-episodes iframe{
-        width: 300px;
-  
-  }
-
-}
+</html>
