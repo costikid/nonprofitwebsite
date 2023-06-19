@@ -325,7 +325,7 @@ header .logo
 }
 
 .subjects p{
-  font-size: 1em;
+  font-size: var(--most-used-em);
   color: var(--light);
   text-align: center;
   padding: calc(var(--most-used-em) - 0.5em);
@@ -392,6 +392,78 @@ background-color: var(--green-3);
     }
 
 }
+
+
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 10px;
+  padding:var(--most-used-em);
+  background-color: var(--green-1);
+
+}
+
+
+.gallery__image {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+    /* Modal that opens when image 
+    is clicked*/
+
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  overflow: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+ /* X symbol to close the modal*/
+
+.modal__close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 30px;
+  color: var(--light);
+  cursor: pointer;
+}
+
+.modal__image {
+  max-width: 50%;
+  max-height: 100%;
+}
+
+@media (max-width: 480px) {
+    
+/* Media query when the modal image opens on mobile*/
+
+.modal__image{
+    max-width: 100%;
+    }
+
+  }
+
+  @media (min-width: 480px) {
+    
+    /* Media query when the modal image opens on mobile*/
+    
+    #subjects-section{
+        height: 55em;
+        }
+    
+      }
 
 @media (max-width: 991px)
 {
@@ -515,7 +587,7 @@ background-color: var(--green-3);
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(media/kibera-4.webp);
+    background-image: url(media/kibera-6.webp);
     background-position: center;
     background-size: cover;
 }
@@ -661,7 +733,7 @@ padding: var(--most-used-em);
 }
 
 .newsletter{
-  padding: 1em;
+  padding: var(--most-used-em);
 }
 
 .general-btn{
@@ -704,7 +776,7 @@ padding: var(--most-used-em);
 }
 
 .footer h1{
-  padding: 1em;
+  padding: var(--most-used-em);
 }
 
 .fa{
@@ -748,44 +820,5 @@ padding: var(--most-used-em);
 
 }
 }
- /* When you'll start formster add button that opens volunteering form in new tab ONLY ON MOBILE */
 
-#podcast-episodes{
-  margin-top: calc(var(--most-used-em) + 4em);
-  background-color: var(--green-2);
-}
 
-.episode-container {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  }
-
-  .episode-container img{
-    width: 20em;
-    height: 20em;
-    padding: var(--most-used-em);
-  }
-
-.episode-item:nth-child(1) {
-  order: 0;
-  flex: 0 1 auto;
-  align-self: auto;
-  }
-
-.episode-item:nth-child(2) {
-  order: 0;
-  flex: 0 1 auto;
-  align-self: auto;
-  }
-
-  @media (max-width: 768px){
-    #podcast-episodes iframe{
-        width: 300px;
-  
-  }
-
-}
