@@ -203,19 +203,16 @@ header .logo
   z-index: 10;
 }
 
+.hero-text h1{
+  font-size: 1.5em;
+}
+
 .hero-text h2
 {
   font-size: 1.2em;
   line-height: 1.5em;
 }
-.hero-text h4
-{
-  font-size: 2em;
-  font-weight: 700;
-  color: var(--light);
-  line-height: var(--most-used-em);
-  text-transform: uppercase;
-}
+
 .hero-text p
 {
   font-size: 1.1em;
@@ -226,13 +223,20 @@ header .logo
 }
 
 @media (max-width: 768px){
-  .hero-text h3{
-      font-size: calc(var(--frequent-font-size) + 0.1em);
+  .social{
+    left: 10px;
+  }
+  .hero-text h2{
+      font-size: calc(var(--frequent-font-size) - 0.5em);
 
 }
-.hero-text h4{
-  font-size: calc(var(--frequent-font-size) + 0.2em);
+
+.team-bio p{
+  font-size: 0.7em;
 }
+
+
+
 
 
 
@@ -264,6 +268,7 @@ header .logo
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 .social li
 {
