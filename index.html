@@ -384,14 +384,33 @@
     integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
     crossorigin="anonymous"></script>
   <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
-  <script>
-    kofiWidgetOverlay.draw('watotocoding', {
-      'type': 'floating-chat',
-      'floating-chat.donateButton.text': 'Donate',
-      'floating-chat.donateButton.background-color': '#5cb85c',
-      'floating-chat.donateButton.text-color': '#fff'
-    });
-  </script>
+<script>
+  kofiWidgetOverlay.draw('watotocoding', {
+    'type': 'floating-chat',
+    'floating-chat.donateButton.text': 'Donate',
+    'floating-chat.donateButton.background-color': '#5cb85c',
+    'floating-chat.donateButton.text-color': '#fff'
+  });
+
+  // Function to set the iframe title
+  function setIframeTitle() {
+    const iframe = document.querySelector('iframe[src*="ko-fi"]');
+    if (iframe) {
+      iframe.title = 'Ko-fi donation floating chat';
+    }
+  }
+
+  // Use MutationObserver to detect when the iframe is added
+  const observer = new MutationObserver(() => {
+    setIframeTitle();
+  });
+
+  // Start observing the body for changes
+  observer.observe(document.body, {
+    childList: true,
+    subtree: true
+  });
+</script>
 
 </body>
 
